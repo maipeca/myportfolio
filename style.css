@@ -71,18 +71,47 @@ nav ul li:hover {
 main {
   width: 100%;
 }
-main h1, main h2 {
+main h2 {
+  margin-top: 2rem;
   font-family: "JetBrains Mono", monospace;
   color: white;
   text-align: center;
 }
+main h1 {
+  margin-top: 4rem;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  text-align: center;
+}
+@media only screen and (max-width: 1440px) {
+  main h1 {
+    margin-top: 3rem;
+  }
+}
 main .ic {
   width: 50%;
-  margin: 50px auto;
+  margin: 15rem auto;
   text-align: center;
+}
+@media only screen and (max-width: 1440px) {
+  main .ic {
+    margin: 7rem auto;
+  }
+}
+main .ic a {
+  height: auto;
+  display: inline-flex;
 }
 main .ic img {
   width: 80px;
+}
+@media only screen and (max-width: 1440px) {
+  main .ic img {
+    width: 40px;
+  }
+}
+main .ic img:hover {
+  background: rgba(255, 255, 255, 0.257);
 }
 
 /*ABOUT*/

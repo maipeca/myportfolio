@@ -67,20 +67,40 @@ body{
 
     main{
         width: 100%;
-
-        h1, h2{
+        h2{
+            margin-top: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: white ;
+            text-align: center;}
+        h1{
+            margin-top: 4rem;
             font-family: 'JetBrains Mono', monospace;
             color: white ;
             text-align: center;
+
+            @media only screen and (max-width: 1440px)
+            {margin-top: 3rem;} 
             }
 
             .ic{
                 width: 50%; 
-                margin: 50px auto; 
+                margin: 15rem auto; 
                 text-align: center;
 
-                    img{width: 80px;}
-                }
+                @media only screen and (max-width: 1440px)
+                {margin: 7rem auto;} 
+
+                a{height: auto; display: inline-flex;}
+
+                    img {width: 80px;
+                        @media only screen and (max-width: 1440px)
+                            {width: 40px;} 
+
+                    &:hover{background: rgba(255, 255, 255, 0.257);
+                    
+                    }}
+                
+                }      
         }
   
         
