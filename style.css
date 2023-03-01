@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(./images/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+nav ul li {
+  list-style: none;
+  margin: 50px 30px 50px 30px;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #f16305 inset;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 536px) {
+  nav ul li {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    width: 7rem;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  box-shadow: 0 0 10px 0 #f16305 inset, 0 0 10px 4px #082b43;
+  color: #f16305;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+}
+main h1, main h2 {
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  text-align: center;
+}
+main .ic {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+main .ic img {
+  width: 80px;
+}
+
+/*ABOUT*/
+.skills {
+  width: 90%;
+  margin: 30px auto;
+}
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+.skills ul li {
+  list-style: none;
+}
+
+p {
+  color: white;
+  font-size: 1.6rem;
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*PROJECTS*/
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section .proyect {
+  margin: 2rem;
+  width: 500px;
+}
+section .proyect p {
+  text-align: center;
+}
+section .proyect p a {
+  color: rgb(255, 223, 163);
+  text-align: center;
+}
+section figcaption {
+  color: white;
+  text-align: center;
+}
+section img {
+  width: 500px;
+}
+section #project4 {
+  background: #504a69;
+  height: 237px;
+  width: 500px;
+}
+section #project4 p {
+  position: relative;
+  margin-top: 10px;
+  height: 20px;
+}
+section .progress-bar {
+  position: relative;
+  width: 300px;
+  background-color: rgb(248, 116, 0);
+  border-radius: 10px;
+  margin: 20% auto;
+  height: 10%;
+}
+section .progress-bar::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 0.1rem;
+  margin-top: 1px;
+  margin-right: 2rem;
+  width: calc(var(--width, 0) * 2%);
+  min-width: 3rem;
+  max-width: calc(70% - 1em);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/*ABOUT*/
+h3, h4 {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
